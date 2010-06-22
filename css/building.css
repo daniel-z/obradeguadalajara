@@ -1,0 +1,26 @@
+.content{
+    background-color:#66FF00;}
+}
+image{
+    background-color:#66ff00;
+}
+.BlueBG{
+ background-color: rgba(00,00,ff,1);
+}
+.Main{
+     background-color: rgba(99,99,99,1);
+}
+
+.Licence{
+    background-color:#33FFCC;
+}
+.Blocke{
+    border-color:white;
+    border-style:dotted;
+    border-width:thin;
+    border-color:#ffffff;
+}
+TAG{
+    font:Georgia;
+    color:#999999;
+}

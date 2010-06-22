@@ -1,0 +1,227 @@
+/*                                                                      
+            Obra de Guadalajara : www.obradeguadalajara.mx              
+                          Some Rights Reserved                          
+                        Creative Commons License                        
+       Atribución-No comercial-Licenciamiento Recíproco 2.5 México      
+                                                                      */
+
+body {
+   /*
+    background: url(../images/nebula.png) repeat-x scroll 0 0;
+*/
+}
+
+html, body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body{
+    height: 768%;
+    width:100%;
+}
+
+
+/*    Header    */
+.HeaderBand{
+    height:100px;
+    background-color:rgba(19,107,178,.5);
+}
+.Header{
+    -moz-border-radius:6px 6px 6px 6px;
+    -moz-box-shadow:2px 2px 2px #999999;
+    height:100px;
+    margin:auto;
+    background:url(../images/bg_header.jpg);
+}
+.HeadLogo{
+    height:90px;
+    float:right;
+    width:110px;
+    padding:10px 0 0 0;
+}
+.Logo{
+    width:79px;
+    height:84px;
+    margin:auto;
+}
+.Title{
+    width:80%;
+    height:100px;
+    float:left;
+    padding:0px 0 0 30px;
+}
+    .Title > h1{
+        font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size:big;
+        margin-bottom:0;
+        text-shadow:0 1px 0 #FFFFFF;
+        color:#000000;
+    }
+    .Title > h2{
+        font-size:16px;
+        margin-top:0;
+        color:rgba(255,153,0,1);
+        text-shadow:0 1px 0 #000000;
+        margin-right:auto;
+    }
+
+.BodyBand{
+    height:100%;
+
+}
+.SubHeader{
+    height:180px;
+    margin:auto;
+}
+    .SubHeader > .RLColumns{
+        width:100%;
+        height:180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .RLColumns > .LeftColumn{
+        width:70%;
+        height:180px;
+        float:left;
+        margin-left: auto;
+    }
+    .LeftColumn > .BiblicalDate{
+        width:100%;
+        height:60%;
+        text-align:right;
+        background-color:rgba(19,107,178,.2);
+        -moz-box-shadow:1px 1px 1px 1px #ff9900;
+    }
+        .BiblicalDate > p{
+            height:60%;
+            width:90%;
+            font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size:medium;
+            text-align:justify;
+            margin:0;
+        }
+        .BiblicalDate > p > b {
+            font:bolder;
+        }
+
+    .LeftColumn > .NavBar{
+        width:100%;
+        height:30%;
+        background-color:#C0C0C0;
+        background-color:rgb(80,00,80);
+    }
+    .RLColumns > .RightColumn{
+        width:30%;
+        height:180px;
+        float:right;
+    }
+    .RightColumn > .Video{
+        height:180px;
+        float:right;
+    }
+    .VideoSample{
+        margin-left: auto;
+        width:250px;
+        height:180px;background-color:rgb(80,00,80);
+        -moz-border-radius:6px 6px 6px 6px;
+        -moz-box-shadow:2px 2px 2px #999999;
+    }
+
+.SideBar{
+    height:400px;
+    padding: 20px 10px 10px 10px;
+}
+.SideBarContent{
+    float:left;
+    height:400px
+    width:110px;
+}
+
+.Content{
+    height:70%;
+    background-color:rgba(0,0,0,0);
+}
+.ContentBody{
+    padding:20px 10px 20px 10px;
+    float:left;
+    width:570px;
+    height:410px;
+}
+.Footer{
+    height:31px;
+}
+.FooterBlock{
+    padding:5px 10px 5px 10px;
+    text-align:right;
+}
+.FooterContent{
+    padding:5px 10px 5px 10px;
+    text-align:right;
+}
+
+/*
++ --------------- +
+    Main staff     
++ --------------- +
+*/
+.SpaceSmall{
+    height:10px;
+    background-color:rgba(0,0,0,0);
+}
+.SpaceMedium{
+    height:20px;
+    background-color:rgba(0,0,0,0);
+}
+.SpaceBig{
+    height:40px;
+    background-color:rgba(0,0,0,0);
+}
+.MWidth{
+    width:60%;
+}
+
+.MLeft{
+    width:90px;
+    padding:0 10px 0 0;
+    background-color:rgba(0,0,0,0);
+    float:left;
+}
+.MRight{
+    width:284px;
+    background-color:rgba(0,0,0,0);
+    float:right;
+}
+
+.FootNote{
+    font-size:small;
+    font-style:italic;
+    margin-top:1px;
+    width:100%;
+    margin-left:auto;
+}
+.Block{
+    left:20%;
+    right:20%;
+    width:60%;
+}
+
+   /*
+    Several Staff
+*/
+.W100PC{
+ width:100%;
+}
+
+/*
+
+h1 {
+ color: #00;
+ opacity: .4;
+ font-size:x-large;
+ color:#DEDEDE;
+ text-decoration:none;
+ text-shadow:1px 1px 0 #111111;
+ text-transform:uppercase;
+*/
+}
