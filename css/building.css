@@ -20,6 +20,12 @@ image{
     border-width:thin;
     border-color:#ffffff;
 }
+.Border{
+    border-color:black;
+    border-style:dotted;
+    border-width:thin;
+}
+
 TAG{
     font:Georgia;
     color:#999999;
