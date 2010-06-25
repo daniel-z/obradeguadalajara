@@ -4,13 +4,6 @@
                         Creative Commons License                        
        Atribución-No comercial-Licenciamiento Recíproco 2.5 México      
                                                                       */
-
-body {
-   /*
-    background: url(../images/nebula.png) repeat-x scroll 0 0;
-*/
-}
-
 html, body{
     margin:0;
     padding:0;
@@ -105,11 +98,67 @@ body{
 
 .NavigationBar{
     height:296px;
-    width:96px;
+    width:94px;
     float:left;
     left:0;
     position:fixed;
-    padding: 2px 2px 2px 2px;
+    padding: 2px;
+    background-color:#e5e5e5;
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 #E6E6E6;
+    border-color:#999999 #999999 #888888;
+    border-style:solid;
+    border-width:1px;
+}
+
+.NavigationBar > .Button {
+    -moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 #E6E6E6;
+    border-color:#999999 #999999 #888888;
+    border-style:solid;
+    border-width:1px;
+    cursor:pointer;
+    padding:0;
+    margin-top:3px;
+}
+.NavigationBar > .Button > span{
+    -moz-border-radius:3px;
+    border-color:#FFFFFF #FFFFFF -moz-use-text-color;
+    border-style:solid solid none;
+    border-width:1px 1px medium;
+    color:#333333;
+    cursor:pointer;
+    display:block;
+    font-size:10px;
+    font-weight:normal;
+    height:12px;
+    line-height:14px;
+    padding:3px 7px 6px;
+    text-shadow:0 1px 0 #FFFFFF;
+    vertical-align:middle;
+}
+
+/*
+-moz-border-radius:3px;
+    -moz-box-shadow:0 1px 0 #E6E6E6;
+    border-color:#FFFFFF #FFFFFF -moz-use-text-color;
+    border-width:1px 1px medium;
+    border-style:solid;
+    color:#333333;
+    cursor:pointer;
+    display:block;
+    font-size:small;
+    text-wrap
+    height:12px;
+    line-height:14px;
+    padding:10% 5% 10% 5%;
+    text-shadow:0 1px 0 #FFFFFF;
+    vertical-align:middle;
+    margin-top:5px;
+    text-align:justify;
+    cursor:pointer;
+    
+*/
 }
 
 .ContentBody{
@@ -129,10 +178,9 @@ body{
     padding:5px 10px 5px 10px;
     text-align:right;
 }
-
 /*
 + --------------- +
-    Main staff     
+    General staff     
 + --------------- +
 */
 .SpaceSmall{
@@ -212,17 +260,4 @@ body{
 */
 .W100PC{
  width:100%;
-}
-
-/*
-
-h1 {
- color: #00;
- opacity: .4;
- font-size:x-large;
- color:#DEDEDE;
- text-decoration:none;
- text-shadow:1px 1px 0 #111111;
- text-transform:uppercase;
-*/
 }
