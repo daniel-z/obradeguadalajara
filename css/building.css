@@ -1,11 +1,15 @@
+body{
+    height:2000px;
+}
+
 .content{
-    background-color:#66FF00;}
+    background-color:#66FF00;
 }
 image{
     background-color:#66ff00;
 }
 .BlueBG{
- background-color: rgba(00,00,ff,1);
+ background-color: rgba(00,00,99,1);
 }
 .Main{
      background-color: rgba(99,99,99,1);
@@ -27,6 +31,6 @@ image{
 }
 
 TAG{
-    font:Georgia;
+    font-family:"Courier New", Courier, monospace;
     color:#999999;
 }
