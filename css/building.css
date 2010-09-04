@@ -1,38 +1,29 @@
-This is a test text.
+/*                                                                      
+            Obra de Guadalajara : www.obradeguadalajara.com.mx          
+                          Some Rights Reserved                          
+                        Creative Commons License                        
+       Atribución-No comercial-Licenciamiento Recíproco 2.5 México      
+                                                                      */
 
-body{
-    height:768px;
-}
-
-.content{
-    background-color:#66FF00;
-}
-image{
-    background-color:#66ff00;
-}
-.BlueBG{
- background-color: rgba(00,00,99,1);
-}
-.Main{
-     background-color: rgba(99,99,99,1);
+#NavBar,
+#VideoSample,
+#Title
+{
+    background-color: #F3F3F3;
 }
 
-.Licence{
-    background-color:#33FFCC;
-}
-.Blocke{
-    border-color:white;
-    border-style:dotted;
-    border-width:thin;
-    border-color:#ffffff;
-}
-.Border{
-    border-color:black;
-    border-style:dotted;
-    border-width:thin;
+
+#BiblicalDate,
+#Footer,
+#HeadLogo
+{
+    background-color: #CCCCCC;
 }
 
-TAG{
-    font-family:"Courier New", Courier, monospace;
-    color:#999999;
+#page{
+    background-color:#FFFFFF;
+}
+
+.spacebefore_2{
+    padding-left:105px;
 }
