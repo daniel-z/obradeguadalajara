@@ -1,0 +1,51 @@
+{
+    "metadata": {
+    },
+    "predicaciones": [
+        {
+            "fecha": "2013-05-03",
+            "titulo": "Tipos Sombras y Figuras 3"
+            "archivo": "2013-05-03-TiposSombrasYFiguras-3.mp3"
+        },
+        {
+            "fecha": "2013-05-05",
+            "titulo": "Un Perfume Muy Especial"
+            "archivo": "2013-05-05-UnPerfumeMuyEspecial.mp3"
+        },
+        {
+            "fecha": "2013-05-07",
+            "titulo": "La Mejor Recompensa",
+            "archivo": "2013-05-07-LaMejorRecompensa.mp3"
+        },
+        {
+            "fecha": "2013-05-12",
+            "titulo": "La Palabra De Perseverancia",
+            "archivo": "2013-05-12-LaPalabraDePerseverancia.mp3"
+        },
+        {
+            "fecha": "2013-05-26",
+            "titulo": "La Guerra de los Predestinados",
+            "archivo": "2013-05-26-LaGuerraDeLosPredestinados.mp3"
+        },
+        {
+            "fecha": "2013-05-28",
+            "titulo": "Los Enemigos de la Novia",
+            "archivo": "2013-05-28-LosEnemigosDeLaNovia.mp3"
+        },
+        {
+            "fecha": "2013-05-31",
+            "titulo": "TiposSombrasYFiguras 4",
+            "archivo": "2013-05-31-TiposSombrasYFiguras-4.mp3"
+        },
+        {
+            "fecha": "2013-06-02",
+            "titulo": "Los Poderes de Tinieblas",
+            "archivo": "2013-06-02-LosPoderesDeTinieblas.mp3"
+        },
+        {
+            "fecha": "2013-06-04",
+            "titulo": "LosDemoniosDelKlipot",
+            "archivo": "2013-06-04-LosDemoniosDelKlipot.mp3"
+        }
+    ]
+}
