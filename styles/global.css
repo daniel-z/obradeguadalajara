@@ -1,0 +1,142 @@
+/*
+            Obra de Guadalajara : www.obradeguadalajara.mx
+                          Some Rights Reserved
+                        Creative Commons License
+       Atribución-No comercial-Licenciamiento Recíproco 2.5 México
+                                                                      */
+
+@import 'reset.css';
+@import '../fonts/ExistenceLight/stylesheet.css';
+
+body {
+    font-family: ExistenceLight;
+    background-color: #f3f3f3;
+    width: 90%;
+    padding: 5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 22px;
+    margin: 8px 0;
+}
+h3 {
+    font-size: 18px;
+    margin: 6px 0;
+}
+h4 {
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+body #page {
+
+}
+
+body #page header {
+
+}
+
+body #page header h1 {
+    font-size: 42px;
+}
+
+body #page #content {
+    border: 1px solid #b4b4b4;
+    border-left: none;
+    border-right: none;
+    min-width: 50px;
+    min-height: 50px;
+    display: block;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+body #page header h1, body #page header h2 {
+    text-align: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body #page header h2 {
+    text-align: right;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 35px;
+}
+
+/* home */
+
+body #page #content div.audio-predicas {
+    margin: 10px auto;
+    width: 400px
+}
+
+body #page #content div.audio-predicas h3 {
+    text-align: center;
+}
+
+#audio-player {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 50px;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+ul#lista-predicaciones {
+    overflow: auto;
+    border: 1px solid #c3c3c3;
+    width: 96%;
+    padding: 2%;
+    margin: 5px 0;
+    display: inline-block;
+    height: 122px; /* 5 elements visible*/
+    overflow: scroll;
+}
+
+ul#lista-predicaciones li {
+    display: block;
+    margin: 5px 0;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+
+ul#lista-predicaciones li a {
+    width: 98%;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding: 0 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+ul#lista-predicaciones li a:hover {
+    background-color: #555;
+    color: #FFF;
+}
+
+ul#lista-predicaciones li a span.fecha {
+    width: 35%;
+    display: inline-block;
+}
+
+ul#lista-predicaciones li a span.nombre {
+    width: 60%;
+    padding-left: 5%;
+    border-left: 1px solid #b9b9b9;
+}

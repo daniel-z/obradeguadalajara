@@ -5,115 +5,93 @@
 <!--       Atribución-No comercial-Licenciamiento Recíproco 2.5 México      -->
 <!--                                                                        -->
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-
-    
-<html xmlns="http://www.w3.org/1999/xhtml">
-        
+<!doctype html>
+<html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Iglesia Obra de Guadalajara</title>
-        <!--     css work     -->
-        <link rel="stylesheet" type="text/css" href="css/960/960.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/960/reset.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/960/text.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/building.css" media="all" />
-        <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+
+        <!--     styles     -->
+        <link rel="stylesheet" type="text/css" href="styles/reset.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="styles/global.css" media="all" />
+
+        <!--     scripts     -->
+        <script type="text/javascript" src="scripts/lib/jquery.js"></script>
+        <script type="text/javascript" src="scripts/lib/underscore.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
     </head>
 
     <body>
-        <div id="page" class="container_16">
+        <div id="page">
+            <header>
+                <h1>Iglesia Obra de Guadalajara</h1>
+                <h2>Ministerios Llamada Final</h2>
+            </header>
 
-<!--Header Block-->
-            <div id="Header" class="grid_16">
+            <div id="content">
+                <div class="audio-predicas">
+                    <h3>Predicaciones:</h3>
+                    <audio controls id="audio-player">
+                        <source src="horse.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Seleccione un audio:</p>
+                    <ul id="lista-predicaciones">
+                        <li>
+                            <a href="#Audio-04Enero2012">
+                                <span class="fecha">04 Enero 2012</span>
+                                <span class="nombre">Las Maravillas De Dios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-10Julio2012">
+                                <span class="fecha">10 Julio 2012</span>
+                                <span class="nombre">Los Libros de Dios</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-25Diciembre2014">
+                                <span class="fecha">25 Diciembre 2014</span>
+                                <span class="nombre">Los Lenguajes de los Cielos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-12Octubre2013">
+                                <span class="fecha">12 Octubre 2013</span>
+                                <span class="nombre">Los Estatutos de la Iglesia</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-01Marzo2011">
+                                <span class="fecha">01 Marzo 2011</span>
+                                <span class="nombre">El Desierto</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-05Febrero2012">
+                                <span class="fecha">05 Febrero 2012</span>
+                                <span class="nombre">El Arrebatamiento</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#Audio-09Agosto2013">
+                                <span class="fecha">09 Agosto 2013</span>
+                                <span class="nombre">Bautizando a la Novia</span>
+                            </a>
+                        </li>
 
-                <div id="HeadLogo" class="grid_2 alpha">
-                    <img id="Logo" src="images/small_logo.png" alt="Iglesia Obra de Guadalajara"/>
-                </div>
-
-                <div id="Title" class="grid_14 omega">
-                    <h1>Iglesia Obra de Guadalajara</h1>
-                    <h3>Ministerios Llamada Final</h3>
-                </div>
-            </div><!--end Header-->
-
-<!--SubHeader Block-->
-            <div id="SubHeader" class="grid_16">
-                <div id="SubHeaderContent" class="grid_16">
-
-                    <div id="LeftColumn" class="prefix_2 grid_9 alpha">
-                        <div id="BiblicalDate" class="grid_9">
-                            <h2>Joel 2:1</h2>
-                            <p>
-                                Tocad trompeta en Sion, y sonad alarma en mi santo monte.
-                                Tiemblen todos los habitantes de la tierra, porque viene 
-                                el día del SEÑOR, porque está cercano.<br />
-                            </p>
-                            <p class="Note">La Biblia de las Américas</p>
-                        </div><!--end BiblicalDate-->
-
-                        <div id="NotificationArea" class="grid_9">
-                            <p class="NoMargin">
-                               Esta es una notificación y debe atraer rápido tu atención!!, 
-                               esto es tanto texto que en algun punto debe hacer un wrap.
-                            </p>
-                        </div><!--end NotificationArea-->
-                    </div><!--end LeftColumn-->
-
-                    <div id="RightColumn" class="grid_5 omega">
-                        <div id="Video" class="grid_5">
-                            <img id="VideoSample" src="images/video_sample.png" alt="Video sample" title="Video sample"/>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-<!--SideBar Block-->
-            <div id="SideBar grid_2">
-                <div id="NavigationBar" class="grid_2">
-                    <ul>
-                        <li class="Button"><span>Home</span></li>
-                        <li class="Button"><span>Videos</span></li>
-                        <li class="Button"><span>Comentarios</span></li>
-                        <li class="Button"><span>Contacto</span></li>
                     </ul>
                 </div>
             </div>
 
-<!--Content Block-->
-            <div id="Content" class="prefix_2 grid_14">
-                <div id="ContentBlock Block" class="grid_14">
-                    <ul class="grid_12">
-                        <li class="grid_3 alpha">Primera Columna</li>
-                        <li class="grid_3">Segunda Columna</li>
-                        <li class="grid_3">Tercera Columna</li>
-                        <li class="grid_3 omega">Cuarta Columna</li>
-                    </ul>
+            <footer>
+                <div class="address">
+                    <p>
+                        <em>Esperamos que nos visite en:<em><br/>
+                        Vidrio #1522, Col. Americana, Guadalajara, Jalisco, Mexico.
+                    </p>
                 </div>
-            </div>
-
-<!--Footer Block-->
-            <div id="FooterBlock" class="prefix_2 grid_14">
-                <div id="Footer">
-                    <ul class="grid_12">
-                        <li class="grid_3 alpha">Contacto</li>
-                        <li class="grid_3">Comentarios</li>
-                        <li class="grid_3">Reportar un error</li>
-                        <li class="grid_3 omega">Licencia</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!--
-            <div class="LicBlock Licence">
-                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.5/mx/">
-                    <img alt="Creative Commons License" style="border-width:0" 
-                        src="http://i.creativecommons.org/l/by-nc-sa/2.5/mx/88x31.png" />
-                </a><br />
-            </div>
-            -->
+            </footer>
         </div>
     </body>
 </html>
