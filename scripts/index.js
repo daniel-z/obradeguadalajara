@@ -10,21 +10,19 @@ $(function(){
 
     var myAudioApp = new AudioApp({
         audioControlSelector: 'audio#audio-player',
-        audioListSelector: 'ul#lista-predicaciones'
+        audioListSelector: 'ul#preaching-list'
     }),
     myLogger = new Logger({
-        'module':'OdeG App'
+        'module':'OdeG Main App'
     });
 
     // ToDo: remove next line for production environment
     myLogger.turnOn();
-
-    myLogger.log('APP End');
+    myLogger.log('APP Start');
 
     // load audio data
     $.getJSON('audio/audiodata.json', function(data) {
         myAudioApp.init(data);
     });
 
-    myLogger.log('APP Start');
 });

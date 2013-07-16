@@ -7,6 +7,7 @@
 
 @import 'reset.css';
 @import '../fonts/ExistenceLight/stylesheet.css';
+@import '../fonts/Amaranth/stylesheet.css';
 
 body {
     font-family: ExistenceLight;
@@ -95,7 +96,7 @@ body #page #content div.audio-predicas h3 {
     margin-bottom: 10px;
 }
 
-ul#lista-predicaciones {
+ul#preaching-list {
     overflow: auto;
     border: 1px solid #c3c3c3;
     width: 96%;
@@ -106,7 +107,7 @@ ul#lista-predicaciones {
     overflow: scroll;
 }
 
-ul#lista-predicaciones li {
+ul#preaching-list li {
     display: block;
     margin: 5px 0;
     cursor: pointer;
@@ -114,7 +115,7 @@ ul#lista-predicaciones li {
     margin: 0;
 }
 
-ul#lista-predicaciones li a {
+ul#preaching-list li a {
     width: 98%;
     cursor: pointer;
     text-decoration: none;
@@ -125,17 +126,17 @@ ul#lista-predicaciones li a {
     color: #000;
 }
 
-ul#lista-predicaciones li a:hover {
+ul#preaching-list li a:hover {
     background-color: #555;
     color: #FFF;
 }
 
-ul#lista-predicaciones li a span.fecha {
+ul#preaching-list li a span.date {
     width: 35%;
     display: inline-block;
 }
 
-ul#lista-predicaciones li a span.nombre {
+ul#preaching-list li a span.title {
     width: 60%;
     padding-left: 5%;
     border-left: 1px solid #b9b9b9;

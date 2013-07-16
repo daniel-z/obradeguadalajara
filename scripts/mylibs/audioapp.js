@@ -1,4 +1,4 @@
-/*global Logger*/
+/*global Logger, _, $*/
 var AudioApp = function(options){
     var myLogger = new Logger({
         'printModule': true,
@@ -12,7 +12,21 @@ var AudioApp = function(options){
     myLogger.turnOn();
 
     var render = function(){
-        //
+        if(!audiodata){ return; }
+
+        $(audioListSelector).html('');
+
+        var preachingList = audiodata.preachings;
+        _.each(preachingList, function(preachingData) {
+            var $listElement = $('<li></li>'),
+            $anchor = $('<a href="#Audio-'+preachingData.date+'"></a>'),
+            $date = $('<span class="date">'+preachingData.date+'</span>'),
+            $title = $('<span class="title">'+preachingData.title+'</span>');
+
+            $anchor.append($date).append($title);
+            $listElement.append($anchor);
+            $(audioListSelector).append($listElement);
+        }, this);
     };
 
     var init = function(data){
@@ -23,8 +37,8 @@ var AudioApp = function(options){
         }
 
         myLogger.log('initialized');
-        myLogger.log(data);
         audiodata = data;
+        render();
     };
 
     return {
