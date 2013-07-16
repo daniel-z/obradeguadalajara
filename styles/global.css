@@ -10,16 +10,16 @@
 @import '../fonts/Amaranth/stylesheet.css';
 
 body {
-    font-family: ExistenceLight;
+    font-family: AmaranthRegular;
     background-color: #f3f3f3;
     width: 90%;
     padding: 5%;
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: ExistenceLight;
     font-weight: bold;
 }
-
 h1 {
     font-size: 28px;
     margin: 10px 0;
