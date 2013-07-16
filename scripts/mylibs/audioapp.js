@@ -1,4 +1,4 @@
-/*global Logger, _, $*/
+/*global Logger, _, moment, $*/
 var AudioApp = function(options){
     var myLogger = new Logger({
         'printModule': true,
