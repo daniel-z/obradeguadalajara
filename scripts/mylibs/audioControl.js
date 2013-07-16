@@ -1,0 +1,3 @@
+/*global*/
+var audioControl = function() {
+};

@@ -9,8 +9,10 @@
 $(function(){
 
     var myAudioApp = new AudioApp({
-        audioControlSelector: 'audio#audio-player',
-        audioListSelector: 'ul#preaching-list'
+        audioBasePath: 'audio/',
+        audioControl: 'audio#audio-player',
+        audioList: 'ul#preaching-list',
+        audioMonitor: 'div.audio-preaching span.song'
     }),
     myLogger = new Logger({
         'module':'OdeG Main App'

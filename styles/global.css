@@ -77,12 +77,19 @@ body #page header h2 {
 
 /* home */
 
-body #page #content div.audio-predicas {
+body #page #content div.audio-preaching {
     margin: 10px auto;
     width: 400px
 }
 
-body #page #content div.audio-predicas h3 {
+body #page #content div.audio-preaching p.audio-monitor {
+    font-family: AmaranthItalic;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body #page #content div.audio-preaching h3 {
     text-align: center;
 }
 
