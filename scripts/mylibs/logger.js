@@ -15,11 +15,11 @@ var Logger = function(options){
                 console[type](':'+module+':Object:');
                 console[type](options.message);
                 console[type](':---:');
-            };
+                return;
+            }
             preMessage = module+': ';
-        } else {
-            console[type](preMessage+options.message);
         }
+        console[type](preMessage+options.message);
     };
 
     var isDebugEnabled = function(){
