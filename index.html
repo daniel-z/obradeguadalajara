@@ -16,6 +16,7 @@
         <link rel="stylesheet" type="text/css" href="styles/global.css" media="all" />
 
         <!--     scripts     -->
+        <script type="text/javascript" src="scripts/lib/modernizr.js"></script>
         <script type="text/javascript" src="scripts/lib/jquery.js"></script>
         <script type="text/javascript" src="scripts/lib/underscore.js"></script>
         <script type="text/javascript" src="scripts/lib/moment.js"></script>
@@ -24,38 +25,46 @@
         <script type="text/javascript" src="scripts/index.js"></script>
     </head>
 
-    <body>
-        <div id="page">
-            <header>
-                <h1>Iglesia Obra de Guadalajara</h1>
-                <h2>Ministerios Llamada Final</h2>
-            </header>
+    <body class="home">
+        <header>
+            <h1>Iglesia Obra de Guadalajara</h1>
+            <h2>Ministerios Llamada Final</h2>
+        </header>
 
-            <div id="content">
-                <div class="audio-preaching">
-                    <h3>Predicaciones:</h3>
-                    <p class="audio-monitor">Reproduciendo:
-                        <span class="song">-</span>
-                    </p>
-                    <audio controls id="audio-player">
-                        <source src="horse.mp3" type="audio/mpeg">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <p>Seleccione un audio:</p>
-                    <ul id="preaching-list">
-                        <li> Cargando Lista de Predicas... </li>
-                    </ul>
-                </div>
+        <div id="content">
+            <div class="audio-preaching">
+                <h3>Predicaciones:</h3>
+                <p class="audio-monitor">Reproduciendo:
+                    <span class="song">-</span>
+                </p>
+                <audio controls id="audio-player">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Seleccione un audio:</p>
+                <ul id="preaching-list">
+                    <li> Cargando Lista de Predicas... </li>
+                </ul>
             </div>
-
-            <footer>
-                <div class="address">
-                    <p>
-                        <em>Esperamos que nos visite en:<em><br/>
-                        Vidrio #1522, Col. Americana, Guadalajara, Jalisco, Mexico.
-                    </p>
-                </div>
-            </footer>
+            <p class="audio-notification hidden">
+                Tu explorador no puede reproducir audio en formato mp3.
+                Para poder reproducir las predicas en audio por favor utiliza:
+                    <a href="https://www.google.com/intl/es/chrome/browser/?hl=es">
+                        Google Chrome
+                    </a>
+                    ó
+                    <a href="http://www.apple.com/mx/safari/">
+                        Safari
+                    </a>
+            </p>
         </div>
+
+        <footer>
+            <div class="address">
+                <p>
+                    <em>Esperamos que nos visite en:<em><br/>
+                    Vidrio #1522, Col. Americana, Guadalajara, Jalisco, Mexico.
+                </p>
+            </div>
+            </footer>
     </body>
 </html>

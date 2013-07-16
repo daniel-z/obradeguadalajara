@@ -23,8 +23,12 @@ $(function(){
     myLogger.log('APP Start');
 
     // load audio data
-    $.getJSON('audio/audiodata.json', function(data) {
-        myAudioApp.init(data);
-    });
-
+    if (Modernizr.audio.mp3){
+        $.getJSON('audio/audiodata.json', function(data) {
+            myAudioApp.init(data);
+        });
+    } else {
+        $('div.audio-preaching').addClass('hidden');
+        $('p.audio-notification').removeClass('hidden');
+    }
 });
