@@ -18,15 +18,21 @@ var AudioApp = function(options){
 
         var preachingList = audiodata.preachings;
         _.each(preachingList, function(preachingData) {
-            var $listElement = $('<li></li>'),
-            $anchor = $('<a href="#Audio-'+preachingData.date+'"></a>'),
-            $date = $('<span class="date">'+preachingData.date+'</span>'),
-            $title = $('<span class="title">'+preachingData.title+'</span>');
-
-            $anchor.append($date).append($title);
-            $listElement.append($anchor);
-            $(audioListSelector).append($listElement);
+            generateListElement(preachingData);
         }, this);
+    },
+
+    generateListElement = function(preachingData){
+        var $listElement = $('<li></li>'),
+        date = moment(preachingData.date).format('DD MMMM YYYY'),
+        $anchor = $('<a href="#Audio-'+preachingData.date+'"></a>'),
+        $date = $('<span class="date">'+date+'</span>'),
+        $title = $('<span class="title">'+preachingData.title+'</span>');
+
+        $anchor.append($date).append($title);
+        $listElement.append($anchor);
+        $(audioListSelector).append($listElement);
+        return preachingData;
     };
 
     var init = function(data){
