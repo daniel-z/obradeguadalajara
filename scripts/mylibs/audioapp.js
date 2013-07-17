@@ -36,6 +36,7 @@ var AudioApp = function(options){
         $anchor.data('title', preachingData.title);
 
         $anchor.append($date).append($title);
+        $listElement.addClass('audio');
         $listElement.append($anchor);
         $(audioListSelector).append($listElement);
 
@@ -56,6 +57,9 @@ var AudioApp = function(options){
         $element.on('click',function(){
             var audioMonitorText = $element.data('date') + ' - ' + $element.data('title'),
             audioControl = $(audioControlSelector).get(0);
+
+            $element.parent().parent().find('.active').removeClass('active');
+            $element.parent().addClass('active');
 
             updateAudioMonitor(audioMonitorText);
             audioControl.src = $element.data('file');
