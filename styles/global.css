@@ -75,7 +75,47 @@ body header h2 {
     padding-right: 35px;
 }
 
-/* home */
+/* Notification Area */
+div#page-notifications {
+    width: 100%;
+}
+div#page-notifications div.notification {
+    padding: 8px;
+    padding-left: 10px;
+    margin: 10px;
+    border: 1px solid #b9b9b9;
+    box-shadow: 1px 1px 5px #b9b9b9;
+}
+div#page-notifications div.notification.info {
+    background-color: #FFF;
+}
+div#page-notifications div.notification.success {
+    background-color: #FFA200;
+}
+div#page-notifications div.notification.warning {
+    background-color: #FF5900;
+}
+div#page-notifications div.notification.error {
+    background-color: #FF0000;
+}
+div#page-notifications div.notification a.close-button,
+div#page-notifications div.notification p {
+    margin: 5px;
+    display: inline-block;
+}
+div#page-notifications div.notification a.close-button {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 4px 6px;
+    line-height: 15px;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------
+    home page
+   ------------------------------------------------------------------------ */
+
 body.home {
     padding: 0;
     margin: auto;
