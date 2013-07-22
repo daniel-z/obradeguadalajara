@@ -17,6 +17,9 @@ body {
     font-family: AmaranthRegular;
     background-color: #f3f3f3;
     width: 100%;
+    /* media queries */
+    min-width: 1024px;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,15 +43,6 @@ h4 {
     margin: 4px 0;
 }
 
-body header {
-    width: 80%;
-    padding: 60px 10%;
-}
-
-body header h1 {
-    font-size: 42px;
-}
-
 body #content {
     border: 1px solid #b4b4b4;
     border-left: none;
@@ -56,31 +50,21 @@ body #content {
     min-width: 50px;
     min-height: 50px;
     display: block;
-    margin: 40px 0 10px 0;
-    padding: 20px 0;
-}
+    margin:0;
+    padding: 20px 0;}
 
-body header h1, body header h2 {
-    text-align: center;
-    width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body header h2 {
-    text-align: right;
-    margin: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 35px;
-}
-
-/* Notification Area */
+/* ---------------------
+    Notification Area
+   --------------------- */
 div#page-notifications {
-    width: 100%;
+    min-width: 512px;
+    overflow: auto;
+    position: absolute;
+    left: 262px;
+    width: 50%;
 }
 div#page-notifications div.notification {
-    padding: 8px;
+    padding: 0;
     padding-left: 10px;
     margin: 10px;
     border: 1px solid #b9b9b9;
@@ -112,9 +96,70 @@ div#page-notifications div.notification a.close-button {
     cursor: pointer;
 }
 
-/* -------------------------------------------------------------------------
-    home page
-   ------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------ */
+/* General Header                                                           */
+/* ------------------------------------------------------------------------ */
+body header {
+    background-color: #4A2A82;
+    box-shadow: 1px 1px 14px #000;
+}
+body header {
+    /* media queries */
+    min-width: 1024px;
+    padding: 90px 0;
+    color: #FFF;
+    background-image: url('/images/obradeguadalajara_logosolo_500x469.png');
+    background-position: 0px 2px;
+    background-size: 280px;
+    background-repeat: no-repeat;
+}
+body header h1 {
+    font-size: 42px;
+    text-shadow: 1px 1px 16px;
+    text-transform: capitalize;
+    text-align: right;
+}
+body header h1, body header h2 {
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body header h2 {
+    text-align: right;
+    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/* ------------------------------------------------------------------------ */
+/* General Footer                                                           */
+/* ------------------------------------------------------------------------ */
+
+body footer {
+    overflow: auto;
+    padding: 0 15px;
+    margin: auto;
+    width: 700px;
+}
+
+body footer div.address img.logo, body footer div.address p {
+    width: 50px;
+    height: 50px;
+    float: left;
+    display: inline-block;
+}
+
+body footer div.address p {
+    width: 640px;
+    padding: 20px 0 0 10px;
+    height: auto;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Home Page                                                                */
+/* ------------------------------------------------------------------------ */
 
 body.home {
     padding: 0;
@@ -210,21 +255,4 @@ body.home ul#preaching-list li a span.title {
     width: 60%;
     padding-left: 5%;
     border-left: 1px solid #b9b9b9;
-}
-
-body.home footer div.address img.logo, body.home footer div.address p {
-    width: 50px;
-    height: 50px;
-    float: left;
-    display: inline-block;
-}
-
-body.home footer {
-    overflow: auto;
-    padding: 0 15px;
-}
-
-body.home footer div.address p {
-    width: auto;
-    padding-top: 10px;
 }
