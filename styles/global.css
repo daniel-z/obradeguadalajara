@@ -142,6 +142,7 @@ body footer {
     padding: 0 15px;
     margin: auto;
     width: 700px;
+    padding: 0 15px 15px 15px;
 }
 
 body footer div.address img.logo, body footer div.address p {
