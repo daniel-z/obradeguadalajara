@@ -1,0 +1,30 @@
+/* social icons styles */
+/* http://azmind.com/2012/11/06/social-icons-sprites-35-ready-to-use-icons-psd-png-html-css/ */
+
+a.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 10px;
+	vertical-align: middle;
+	-o-transition: all .3s;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	-ms-transition: all .3s;
+    background-color: #FFF;
+    text-indent: -9999px;
+    text-align: left;
+    padding: 4px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+}
+
+a.icon.twitter { background-image: url(../images/social-icons/twitter.png);}
+a.icon.vimeo { background-image: url(../images/social-icons/vimeo.png); }
+a.icon.facebook { background-image: url(../images/social-icons/facebook.png); }
+a.icon.email { background-image: url(../images/social-icons/email.png); }
+a.icon.github { background-image: url(../images/social-icons/github.png); }
+a.icon.googleplus { background-image: url(../images/social-icons/googleplus.png); }
+a.icon.youtube { background-image: url(../images/social-icons/youtube.png); }
+
+a.icon:hover { background-position-y: -30px; }
