@@ -7,6 +7,7 @@
 
 @import 'reset.css';
 @import 'social-icons.css';
+@import '../fonts/Exo/stylesheet.css';
 @import '../fonts/ExistenceLight/stylesheet.css';
 @import '../fonts/Amaranth/stylesheet.css';
 
@@ -24,8 +25,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: ExistenceLight;
-    font-weight: bold;
+    font-family: ExoBold;
+    font-weight: normal;
 }
 h1 {
     font-size: 28px;
@@ -114,7 +115,7 @@ body header {
 }
 body header h1 {
     font-size: 42px;
-    text-shadow: 1px 1px 16px;
+    text-shadow: 1px 1px 23px;
     text-transform: capitalize;
     text-align: right;
 }
@@ -153,26 +154,38 @@ div.social-icons .icon {
 /* ------------------------------------------------------------------------ */
 
 body footer {
-    overflow: auto;
-    padding: 0 15px;
+    font-family: ExoExtraLight;
     margin: auto;
-    width: 700px;
-    padding: 0 15px 15px 15px;
+    min-width: 512px;
+    padding: 15px 230px;
+    box-shadow: 1px -1px 0 #999;
+    border-top: 1px solid #fff;
+    position: static;
+    bottom: 0;
+    text-align: center;
+    color: #777;
+    text-shadow: 1px 1px 2px #fff;
 }
-
-body footer div.address img.logo, body footer div.address p {
-    width: 50px;
-    height: 50px;
-    float: left;
+body footer div.address {
+    margin: auto;
     display: inline-block;
-}
-
-body footer div.address p {
-    width: 640px;
-    padding: 20px 0 0 10px;
+    width: auto;
+    padding-right: 10px;
     height: auto;
+    text-align: center;
 }
-
+body footer div.address p.address {
+    margin-top: 15px;
+}
+body footer div.address p span {
+    display: block;
+}
+body footer div.address a.map-link {
+    margin-left: 10px;
+    color: #222;
+    text-shadow: 1px 2px 2px #fff;
+    text-decoration: none;
+}
 
 /* ------------------------------------------------------------------------ */
 /* Index Page                                                                */
@@ -182,6 +195,13 @@ body.index p.warning {
     font-size: 24px;
     width: 512px;
     margin: 10px auto;
+    text-shadow: 1px 2px 1px #fff;
+}
+body.index p.warning a {
+    text-decoration: none;
+}
+body.index p.warning a:hover {
+    color: #FF0000;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -192,7 +212,6 @@ body.home {
     padding: 0;
     margin: auto;
 }
-
 body.home #content div.audio-preaching {
     margin: 10px auto;
     width: 400px;
