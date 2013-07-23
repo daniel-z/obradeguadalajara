@@ -6,6 +6,7 @@
                                                                       */
 
 @import 'reset.css';
+@import 'social-icons.css';
 @import '../fonts/ExistenceLight/stylesheet.css';
 @import '../fonts/Amaranth/stylesheet.css';
 
@@ -104,9 +105,8 @@ body header {
     box-shadow: 1px 1px 14px #000;
 }
 body header {
-    /* media queries */
-    min-width: 1024px;
-    padding: 90px 0;
+    min-width: 554px;
+    padding: 68px 235px;
     color: #FFF;
     background-image: url('/images/logo_noname_500x469.png');
     background-position: 0px 2px;
@@ -131,7 +131,22 @@ body header h2 {
     margin-right: auto;
 }
 
-
+/* ------------ */
+/* Social Icons */
+/* ------------ */
+div.social-icons {
+    min-width: 44px;
+    position: relative;
+    margin: auto;
+    text-align: right;
+    width: 530px;
+    stroke: 0;
+    right: -9px;
+}
+div.social-icons .icon {
+    background-color: #FFF;
+    border-radius: 5px;
+}
 
 /* ------------------------------------------------------------------------ */
 /* General Footer                                                           */
@@ -156,6 +171,17 @@ body footer div.address p {
     width: 640px;
     padding: 20px 0 0 10px;
     height: auto;
+}
+
+
+/* ------------------------------------------------------------------------ */
+/* Index Page                                                                */
+/* ------------------------------------------------------------------------ */
+
+body.index p.warning {
+    font-size: 24px;
+    width: 512px;
+    margin: 10px auto;
 }
 
 /* ------------------------------------------------------------------------ */
