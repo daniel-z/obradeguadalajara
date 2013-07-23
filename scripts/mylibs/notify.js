@@ -2,7 +2,7 @@
 var Notify = function(options){
     var wrapper = options.wrapper || '';
 
-    var log = function(type, message){
+    var log = function(type, message, timeout) {
         var $notification = $('<div></div>')
                 .addClass('notification')
                 .addClass(type),
@@ -12,30 +12,40 @@ var Notify = function(options){
 
             $notification.append($closeButton,$message);
 
-        $(wrapper).prepend($notification);
+        $(wrapper).append($notification);
 
-        $notification.on('click', 'a.close-button', function(e){
-            var $notification = e.delegateTarget;
-            $($notification).fadeOut('200', function(){
+        var closeNotification = function(){
+            $notification.fadeOut('200', function(){
                 $notification.remove();
             });
+        };
+
+        $notification.on('click', 'a.close-button', function(e){
+            var notification = e.delegateTarget;
+            closeNotification();
         });
+
+        if(timeout > 0){
+            setTimeout(function() {
+                closeNotification();
+            }, timeout);
+        }
 
         return this;
     };
 
     return {
-        success: function(message){
-            log('success', message);
+        success: function(message, timeout){
+            log('success', message, timeout);
         },
-        error: function(message){
-            log('error', message);
+        error: function(message, timeout){
+            log('error', message, timeout);
         },
-        info: function(message){
-            log('info', message);
+        info: function(message, timeout){
+            log('info', message, timeout);
         },
-        warning: function(message){
-            log('warning', message);
+        warning: function(message, timeout){
+            log('warning', message, timeout);
         }
     };
 };

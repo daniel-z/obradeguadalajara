@@ -23,7 +23,7 @@ $(function(){
     myLogger.turnOn();
     myLogger.log('APP Start');
 
-    myNotify.warning('Esta p&aacute;gina esta en desarrollo, gracias por tu paciencia!');
+    myNotify.warning('Esta p&aacute;gina esta en desarrollo, gracias por tu paciencia!', 4000);
 
     // load audio data
     if (Modernizr.audio.mp3){
