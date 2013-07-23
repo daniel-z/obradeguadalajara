@@ -262,7 +262,6 @@ body.home ul#preaching-list {
 
 body.home ul#preaching-list li {
     display: block;
-    margin: 5px 0;
     cursor: pointer;
     width: 100%;
     margin: 0;
