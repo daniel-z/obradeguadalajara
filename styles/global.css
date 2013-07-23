@@ -113,6 +113,9 @@ body header {
     color: #FFF;
     box-shadow: 1px 1px 14px #000;
 }
+body header h1, body header h2 {
+    font-family: ExoRegular;
+}
 body header h1 {
     font-size: 42px;
     text-shadow: 1px 1px 23px;
