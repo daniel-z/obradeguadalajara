@@ -23,8 +23,6 @@ $(function(){
     myLogger.turnOn();
     myLogger.log('APP Start');
 
-    myNotify.warning('Esta p&aacute;gina esta en desarrollo, gracias por tu paciencia!', 4000);
-
     // load audio data
     if (Modernizr.audio.mp3){
         $.getJSON('audio/audiodata.json', function(data) {

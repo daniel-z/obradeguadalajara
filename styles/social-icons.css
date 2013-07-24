@@ -7,10 +7,12 @@ a.icon {
 	height: 24px;
 	margin: 10px;
 	vertical-align: middle;
+
 	-o-transition: all .3s;
 	-moz-transition: all .3s;
 	-webkit-transition: all .3s;
 	-ms-transition: all .3s;
+
     background-color: #FFF;
     text-indent: -9999px;
     text-align: left;

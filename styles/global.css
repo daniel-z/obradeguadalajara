@@ -14,7 +14,6 @@
 .hidden {
     display: none;
 }
-
 body {
     font-family: AmaranthRegular;
     background-color: #f3f3f3;
@@ -112,6 +111,7 @@ body header {
     padding: 36px 235px;
     color: #FFF;
     box-shadow: 1px 1px 14px #000;
+    min-height: 190px;
 }
 body header h1, body header h2 {
     font-family: ExoRegular;
@@ -121,6 +121,25 @@ body header h1 {
     text-shadow: 1px 1px 23px;
     text-transform: capitalize;
     text-align: right;
+}
+body header:hover h1, body header:hover h2 {
+    color: #E3A34C;
+    text-shadow: 1px 1px 14px #000;
+}
+body header:hover {
+    background-size: 380px;
+    background-position: 0 -25px;
+}
+body header:hover h1 {
+    font-size: 35px;
+}
+body header:hover h2 {
+    font-size: 18px;
+}
+body header:hover h1, body header:hover h2, body header:hover {
+    transition: all 300ms ease 0s;
+    -moz-transition: all 300ms ease 0s;
+    -webkit-transition: all 300ms ease 0s;
 }
 body header h1, body header h2, div.social-icons, p.intro {
     width: 530px;
@@ -204,6 +223,10 @@ body.index p.warning a {
 }
 body.index p.warning a:hover {
     color: #FF0000;
+}
+body.index p.warning a.hidden-link {
+    color: #000;
+    cursor: text;
 }
 
 /* ------------------------------------------------------------------------ */
