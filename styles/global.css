@@ -17,10 +17,6 @@
 body {
     font-family: AmaranthRegular;
     background-color: #f3f3f3;
-    width: 100%;
-    /* media queries */
-    min-width: 1024px;
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,19 +40,15 @@ h4 {
     margin: 4px 0;
 }
 
-body #content {
-    border: 1px solid #b4b4b4;
-    border-left: none;
-    border-right: none;
-    min-width: 50px;
-    min-height: 50px;
-    display: block;
-    margin:0;
-    padding: 20px 0;}
 
-/* ---------------------
-    Notification Area
-   --------------------- */
+/* ------------------------------------------------------------------------ */
+/* Generic Modules                                                          */
+/* ------------------------------------------------------------------------ */
+
+/* --------------- */
+/*  Notifications  */
+/* --------------- */
+
 div#page-notifications {
     min-width: 512px;
     overflow: auto;
@@ -64,6 +56,7 @@ div#page-notifications {
     left: 262px;
     width: 50%;
 }
+
 div#page-notifications div.notification {
     padding: 0;
     padding-left: 10px;
@@ -71,23 +64,29 @@ div#page-notifications div.notification {
     border: 1px solid #b9b9b9;
     box-shadow: 1px 1px 5px #b9b9b9;
 }
+
 div#page-notifications div.notification.info {
     background-color: #FFF;
 }
+
 div#page-notifications div.notification.success {
     background-color: #FFA200;
 }
+
 div#page-notifications div.notification.warning {
     background-color: #FF5900;
 }
+
 div#page-notifications div.notification.error {
     background-color: #FF0000;
 }
+
 div#page-notifications div.notification a.close-button,
 div#page-notifications div.notification p {
     margin: 5px;
     display: inline-block;
 }
+
 div#page-notifications div.notification a.close-button {
     text-decoration: none;
     font-size: 20px;
@@ -97,9 +96,10 @@ div#page-notifications div.notification a.close-button {
     cursor: pointer;
 }
 
-/* ------------------------------------------------------------------------ */
-/* General Header                                                           */
-/* ------------------------------------------------------------------------ */
+/* --------------- */
+/* Header          */
+/* --------------- */
+
 body header {
     background-image: url(../images/logo_noname_500x469.png);
     background-position: 0px 2px;
@@ -107,78 +107,92 @@ body header {
     background-repeat: no-repeat;
     background-color: #4A2A82;
     font-family: ExistenceLight;
-    min-width: 554px;
-    padding: 36px 235px;
     color: #FFF;
     box-shadow: 1px 1px 14px #000;
-    min-height: 190px;
 }
+
 body header h1, body header h2 {
     font-family: ExoRegular;
 }
+
 body header h1 {
     font-size: 42px;
     text-shadow: 1px 1px 23px;
     text-transform: capitalize;
     text-align: right;
 }
+
 body header:hover h1, body header:hover h2 {
     color: #E3A34C;
     text-shadow: 1px 1px 14px #000;
 }
+
 body header:hover {
     background-size: 380px;
     background-position: 0 -25px;
 }
+
 body header:hover h1 {
     font-size: 35px;
 }
+
 body header:hover h2 {
     font-size: 18px;
 }
+
 body header:hover h1, body header:hover h2, body header:hover {
     transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
     -webkit-transition: all 300ms ease 0s;
 }
+
 body header h1, body header h2, div.social-icons, p.intro {
-    width: 530px;
     margin-left: auto;
     margin-right: auto;
     font-weight: normal;
     text-align: right;
 }
+
 body header p.intro {
     margin-top: 20px;
     line-height: 22px;
 }
 
-/* ------------ */
-/* Social Icons */
-/* ------------ */
+/* --------------- */
+/* Social Icons    */
+/* --------------- */
+
 div.social-icons {
     min-width: 44px;
     position: relative;
     margin: 10px auto 0;
     text-align: right;
-    width: 530px;
     right: -9px;
 }
+
 div.social-icons .icon {
     background-color: #FFF;
     border-radius: 5px;
     margin: 0 10px;
 }
 
-/* ------------------------------------------------------------------------ */
-/* General Footer                                                           */
-/* ------------------------------------------------------------------------ */
+/* --------------- */
+/* Content         */
+/* --------------- */
+
+body #content {
+    border: 1px solid #b4b4b4;
+    border-left: none;
+    border-right: none;
+    display: block;
+}
+
+/* --------------- */
+/* Footer          */
+/* --------------- */
 
 body footer {
     font-family: ExoExtraLight;
-    margin: auto;
-    min-width: 512px;
-    padding: 15px 230px;
     box-shadow: 1px -1px 0 #999;
     border-top: 1px solid #fff;
     position: static;
@@ -187,6 +201,7 @@ body footer {
     color: #777;
     text-shadow: 1px 1px 2px #fff;
 }
+
 body footer div.address {
     margin: auto;
     display: inline-block;
@@ -195,12 +210,15 @@ body footer div.address {
     height: auto;
     text-align: center;
 }
+
 body footer div.address p.address {
     margin-top: 15px;
 }
+
 body footer div.address p span {
     display: block;
 }
+
 body footer div.address a.map-link {
     margin-left: 10px;
     color: #222;
@@ -209,34 +227,73 @@ body footer div.address a.map-link {
 }
 
 /* ------------------------------------------------------------------------ */
-/* Index Page                                                                */
+/* Layout                                                                   */
 /* ------------------------------------------------------------------------ */
 
-body.index p.warning {
-    font-size: 24px;
-    width: 512px;
+body, body #content {
+    min-width: 1024px;
+}
+
+body header, body #content, body footer {
+    margin: auto;
+    padding: 36px 235px;
+    min-width: 554px;
+    min-height: 200px;
+}
+
+body #content {
+    padding: 20px 0;
+}
+
+body footer {
+    padding-top: 15px;
+    min-height: 100px;
+}
+
+/* ------------------------------------------------------------------------ */
+/* Specific Pages                                                           */
+/* ------------------------------------------------------------------------ */
+
+/* --------------- */
+/* Index Page      */
+/* --------------- */
+
+body.index .warning {
+    border: 1px solid #999;
+    display: block;
     margin: 10px auto;
+    width: 554px;
+    padding: 10px;
+}
+
+body.index .warning p {
+    font-size: 24px;
+    padding: 8px;
     text-shadow: 1px 2px 1px #fff;
 }
-body.index p.warning a {
+
+body.index .warning p a {
     text-decoration: none;
 }
-body.index p.warning a:hover {
+
+body.index div.warning p a:hover {
     color: #FF0000;
 }
-body.index p.warning a.hidden-link {
+
+body.index div.warning p a.hidden-link {
     color: #000;
     cursor: text;
 }
 
-/* ------------------------------------------------------------------------ */
-/* Home Page                                                                */
-/* ------------------------------------------------------------------------ */
+/* --------------- */
+/* Home Page       */
+/* --------------- */
 
 body.home {
     padding: 0;
     margin: auto;
 }
+
 body.home #content div.audio-preaching {
     margin: 10px auto;
     width: 400px;
