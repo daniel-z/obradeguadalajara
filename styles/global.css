@@ -17,8 +17,15 @@
 body {
     font-family: AmaranthRegular;
     background-color: #f3f3f3;
+    text-align: center;
+    background-image: url('../images/squairy_light.png');
 }
-
+body > div.content {
+    width: 1024px;
+    max-width: 1024px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: ExoBold;
     font-weight: normal;
@@ -50,7 +57,7 @@ h4 {
 /* --------------- */
 
 div#page-notifications {
-    min-width: 512px;
+    /*min-width: 512px;*/
     overflow: auto;
     position: absolute;
     left: 262px;
@@ -122,24 +129,6 @@ body header h1 {
     text-align: right;
 }
 
-body header:hover h1, body header:hover h2 {
-    color: #E3A34C;
-    text-shadow: 1px 1px 14px #000;
-}
-
-body header:hover {
-    background-size: 380px;
-    background-position: 0 -25px;
-}
-
-body header:hover h1 {
-    font-size: 35px;
-}
-
-body header:hover h2 {
-    font-size: 18px;
-}
-
 body header:hover h1, body header:hover h2, body header:hover {
     transition: all 300ms ease 0s;
     -moz-transition: all 300ms ease 0s;
@@ -163,7 +152,7 @@ body header p.intro {
 /* --------------- */
 
 div.social-icons {
-    min-width: 44px;
+    /*min-width: 44px;*/
     position: relative;
     margin: 10px auto 0;
     text-align: right;
@@ -193,7 +182,8 @@ body #content {
 
 body footer {
     font-family: ExoExtraLight;
-    box-shadow: 1px -1px 0 #999;
+    box-shadow: 0 1px 0 #999;
+    border: none;
     border-top: 1px solid #fff;
     position: static;
     bottom: 0;
@@ -202,28 +192,47 @@ body footer {
     text-shadow: 1px 1px 2px #fff;
 }
 
-body footer div.address {
+body footer div.info {
     margin: auto;
     display: inline-block;
-    width: auto;
+    width: 59%;
     padding-right: 10px;
     height: auto;
     text-align: center;
+    float: left;
 }
 
-body footer div.address p.address {
+body footer div.info p.service,
+body footer div.info p.address {
+    width: 100%;
+}
+body footer div.info p.service,
+body footer div.info p.address {
+    display: inline-block;
+    float: left;
+}
+body footer div.info p.address {
     margin-top: 15px;
+    display: inline-block;
+    float: left;
 }
 
-body footer div.address p span {
+body footer div.info p span {
     display: block;
 }
 
-body footer div.address a.map-link {
+body footer a.map-link {
     margin-left: 10px;
     color: #222;
     text-shadow: 1px 2px 2px #fff;
     text-decoration: none;
+    width: 166px;
+    height: 151px;
+    display: inline-block;
+    background-image: url('../images/map.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #b9b9b9;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -231,13 +240,13 @@ body footer div.address a.map-link {
 /* ------------------------------------------------------------------------ */
 
 body, body #content {
-    min-width: 1024px;
+    /*min-width: 1024px;*/
 }
 
 body header, body #content, body footer {
     margin: auto;
     padding: 36px 235px;
-    min-width: 554px;
+    /*min-width: 554px;*/
     min-height: 200px;
 }
 
@@ -247,6 +256,7 @@ body #content {
 
 body footer {
     padding-top: 15px;
+    padding-bottom: 15px;
     min-height: 100px;
 }
 
@@ -264,6 +274,11 @@ body.index .warning {
     margin: 10px auto;
     width: 554px;
     padding: 10px;
+    padding-left: 136px;
+    background-image: url('../images/exclamation.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 15px 26px;
 }
 
 body.index .warning p {
