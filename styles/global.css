@@ -169,7 +169,7 @@ div.social-icons .icon {
 /* Content         */
 /* --------------- */
 
-body #content {
+body .inner-content {
     border: 1px solid #b4b4b4;
     border-left: none;
     border-right: none;
@@ -239,18 +239,18 @@ body footer a.map-link {
 /* Layout                                                                   */
 /* ------------------------------------------------------------------------ */
 
-body, body #content {
+body, body .inner-content {
     /*min-width: 1024px;*/
 }
 
-body header, body #content, body footer {
+body header, body .inner-content, body footer {
     margin: auto;
     padding: 36px 235px;
     /*min-width: 554px;*/
     min-height: 200px;
 }
 
-body #content {
+body .inner-content {
     padding: 20px 0;
 }
 
@@ -309,7 +309,7 @@ body.home {
     margin: auto;
 }
 
-body.home #content div.audio-preaching {
+body.home .inner-content div.audio-preaching {
     margin: 10px auto;
     width: 400px;
     box-shadow: 1px 1px 20px #c3c3c3;
@@ -317,14 +317,14 @@ body.home #content div.audio-preaching {
     border: 1px solid #c3c3c3;
 }
 
-body.home #content div.audio-preaching p.audio-monitor {
+body.home .inner-content div.audio-preaching p.audio-monitor {
     font-family: AmaranthItalic;
     display: block;
     text-align: center;
     margin-top: 10px;
 }
 
-body.home #content div.audio-preaching h3 {
+body.home .inner-content div.audio-preaching h3 {
     text-align: center;
 }
 
