@@ -14,10 +14,19 @@
 .hidden {
     display: none;
 }
+
+a {
+    color: #4A2A82;
+}
+
+a:visited {
+    color: #4A2A82;
+}
+
 body {
     font-family: AmaranthRegular;
     background-color: #f3f3f3;
-    text-align: center;
+    text-align: left;
     background-image: url('../images/squairy_light.png');
 }
 body > div.content {
@@ -152,17 +161,110 @@ body header p.intro {
 /* --------------- */
 
 div.social-icons {
-    /*min-width: 44px;*/
     position: relative;
     margin: 10px auto 0;
     text-align: right;
     right: -9px;
 }
 
-div.social-icons .icon {
+div.social-icons .social-icon {
     background-color: #FFF;
     border-radius: 5px;
     margin: 0 10px;
+}
+
+
+/* --------------- */
+/* Navigation      */
+/* --------------- */
+
+nav {
+    height: auto;
+    margin: 40px 0;
+    float: left;
+    text-align: center;
+}
+
+nav.fly {
+    position: fixed;
+    top: 270px;
+}
+
+nav .icon, .nav-icon {
+    background-image: url('../images/icons-big.png');
+    background-repeat: no-repeat;
+}
+
+nav ul {
+    padding: 0;
+    width: 85px;
+    overflow: auto;
+    border: 1px solid #b9b9b9;
+    box-shadow: 1px 1px 10px #c3c3c3;
+    display: block;
+    background-color: #FFE9B4;
+}
+
+nav ul li {
+    float: left;
+    clear: both;
+    margin: 5px 0;
+}
+
+nav a.icon {
+    color: #000;
+    text-decoration: none;
+    width: 85px;
+    display: block;
+    border-top: 1px solid #FFE9B4;
+    border-bottom: 1px solid #FFE9B4;
+
+    background-size: 55px;
+    padding-top: 64px;
+    font-size: 20px;
+    height: 20px;
+}
+
+nav a.icon:hover {
+    transition: .3s;
+    background-image: url('../images/icons-big-orange.png');
+    border-color: #D52E00;
+    color: #D52E00;
+}
+
+nav a.icon.home {
+    background-position: 15px 4px;
+}
+nav a.icon.home:hover {
+    background-position: 11px 4px;
+}
+
+nav a.icon.video {
+    background-position: 15px -492px;
+}
+
+nav a.icon.video:hover {
+    background-position: 11px -492px;
+}
+nav a.icon.audio {
+    background-position: 15px -61px;
+}
+nav a.icon.audio:hover {
+    background-position: 11px -61px;
+}
+
+nav a.icon.picture {
+    background-position: 15px -700px;
+}
+
+nav a.icon.picture:hover {
+    background-position: 11px -700px;
+}
+
+nav a.icon span {
+    background-color: #FFE9B4;
+    width: 100%;
+    display: block;
 }
 
 /* --------------- */
@@ -170,7 +272,6 @@ div.social-icons .icon {
 /* --------------- */
 
 body .inner-content {
-    border: 1px solid #b4b4b4;
     border-left: none;
     border-right: none;
     display: block;
@@ -184,7 +285,7 @@ body footer {
     font-family: ExoExtraLight;
     box-shadow: 0 1px 0 #999;
     border: none;
-    border-top: 1px solid #fff;
+    border-top: 1px solid #b9b9b9;
     position: static;
     bottom: 0;
     text-align: center;
@@ -246,12 +347,14 @@ body, body .inner-content {
 body header, body .inner-content, body footer {
     margin: auto;
     padding: 36px 235px;
-    /*min-width: 554px;*/
     min-height: 200px;
 }
 
 body .inner-content {
-    padding: 20px 0;
+    padding-left: 140px;
+    margin: 40px 0;
+    padding: 20px 20px 20px 140px;
+    min-height: 408px;
 }
 
 body footer {
@@ -267,6 +370,10 @@ body footer {
 /* --------------- */
 /* Index Page      */
 /* --------------- */
+
+body.index .inner-content {
+    padding-left: 0;
+}
 
 body.index .warning {
     border: 1px solid #999;

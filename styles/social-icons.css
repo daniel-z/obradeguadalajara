@@ -1,7 +1,7 @@
 /* social icons styles */
 /* http://azmind.com/2012/11/06/social-icons-sprites-35-ready-to-use-icons-psd-png-html-css/ */
 
-a.icon {
+a.social-icon {
 	display: inline-block;
 	width: 24px;
 	height: 24px;
@@ -21,12 +21,12 @@ a.icon {
     background-repeat: no-repeat;
 }
 
-a.icon.twitter { background-image: url(../images/social-icons/twitter.png);}
-a.icon.vimeo { background-image: url(../images/social-icons/vimeo.png); }
-a.icon.facebook { background-image: url(../images/social-icons/facebook.png); }
-a.icon.email { background-image: url(../images/social-icons/email.png); }
-a.icon.github { background-image: url(../images/social-icons/github.png); }
-a.icon.googleplus { background-image: url(../images/social-icons/googleplus.png); }
-a.icon.youtube { background-image: url(../images/social-icons/youtube.png); }
+a.social-icon.twitter { background-image: url(../images/social-icons/twitter.png);}
+a.social-icon.vimeo { background-image: url(../images/social-icons/vimeo.png); }
+a.social-icon.facebook { background-image: url(../images/social-icons/facebook.png); }
+a.social-icon.email { background-image: url(../images/social-icons/email.png); }
+a.social-icon.github { background-image: url(../images/social-icons/github.png); }
+a.social-icon.googleplus { background-image: url(../images/social-icons/googleplus.png); }
+a.social-icon.youtube { background-image: url(../images/social-icons/youtube.png); }
 
-a.icon:hover { background-position-y: -30px; }
+a.social-icon:hover { background-position-y: -30px; }
