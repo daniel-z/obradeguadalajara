@@ -30,9 +30,11 @@ body {
     background-image: url('../images/squairy_light.png');
 }
 body > div.content {
-    width: 1024px;
+width: 900px;
+    /*width: 1024px;*/
     max-width: 1024px;
-    min-width: 1024px;
+min-width: 900px;
+    /*min-width: 1024px;*/
     margin: 0 auto;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -40,19 +42,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
 }
 h1 {
-    font-size: 28px;
+    font-size: 41px;
     margin: 10px 0;
 }
 h2 {
-    font-size: 22px;
+    font-size: 32px;
     margin: 8px 0;
 }
 h3 {
-    font-size: 18px;
+    font-size: 28px;
     margin: 6px 0;
 }
 h4 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 4px 0;
 }
 
@@ -144,7 +146,7 @@ body header:hover h1, body header:hover h2, body header:hover {
     -webkit-transition: all 300ms ease 0s;
 }
 
-body header h1, body header h2, div.social-icons, p.intro {
+body header h1, body header h2, div.social-icons, body header p.intro {
     margin-left: auto;
     margin-right: auto;
     font-weight: normal;
@@ -232,36 +234,39 @@ nav a.icon:hover {
     color: #D52E00;
 }
 
-nav a.icon.home {
+nav a.icon.home, .nav-icon.home {
     background-position: 15px 4px;
 }
-nav a.icon.home:hover {
+
+nav a.icon.home:hover, .nav-icon.home:hover {
     background-position: 11px 4px;
 }
 
-nav a.icon.video {
+nav a.icon.video, .nav-icon.video {
     background-position: 15px -492px;
 }
 
-nav a.icon.video:hover {
+nav a.icon.video:hover, .nav-icon.video:hover {
     background-position: 11px -492px;
 }
-nav a.icon.audio {
+
+nav a.icon.audio, .nav-icon.audio {
     background-position: 15px -61px;
 }
-nav a.icon.audio:hover {
+
+nav a.icon.audio:hover, .nav-icon.audio:hover {
     background-position: 11px -61px;
 }
 
-nav a.icon.picture {
+nav a.icon.picture, .nav-icon.picture {
     background-position: 15px -700px;
 }
 
-nav a.icon.picture:hover {
+nav a.icon.picture:hover, .nav-icon.picture:hover {
     background-position: 11px -700px;
 }
 
-nav a.icon span {
+nav a.icon span, .nav-icon span {
     background-color: #FFE9B4;
     width: 100%;
     display: block;
@@ -275,6 +280,8 @@ body .inner-content {
     border-left: none;
     border-right: none;
     display: block;
+    font-size: 18px;
+    font-family: ExoExtraLight;
 }
 
 /* --------------- */
@@ -341,19 +348,18 @@ body footer a.map-link {
 /* ------------------------------------------------------------------------ */
 
 body, body .inner-content {
-    /*min-width: 1024px;*/
 }
 
 body header, body .inner-content, body footer {
     margin: auto;
-    padding: 36px 235px;
+padding: 36px 90px;
+    /*padding: 36px 235px;*/
     min-height: 200px;
 }
 
 body .inner-content {
-    padding-left: 140px;
     margin: 40px 0;
-    padding: 20px 20px 20px 140px;
+    padding: 0 150px;
     min-height: 408px;
 }
 
@@ -361,6 +367,31 @@ body footer {
     padding-top: 15px;
     padding-bottom: 15px;
     min-height: 100px;
+}
+
+div.row {
+    overflow: auto;
+    width: 100%;
+    display: block;
+}
+
+div.row div.column {
+    width: 45%;
+    padding: 0 5%;
+    display: inline-block;
+    float: left;
+}
+
+div.row div.column:first-child {
+    padding-left: 0;
+}
+
+div.row div.column:last-child {
+    padding-right: 0;
+}
+
+div.row div.column p {
+    margin: 10px 0;
 }
 
 /* ------------------------------------------------------------------------ */
@@ -416,7 +447,93 @@ body.home {
     margin: auto;
 }
 
-body.home .inner-content div.audio-preaching {
+body.home .inner-content > div.section {
+    margin: 10px 0 30px;
+}
+
+body.home div.welcome p.address {
+    padding: 20px 10px 0px 25px;
+    margin: 20px 0;
+    border: 1px solid #c3c3c3;
+    box-shadow: 1px 1px 1px #fff;
+    text-shadow: 1px 1px 1px #fff;
+    overflow: auto;
+    background-color: #FFF4D2;
+    width: 50%;
+}
+
+body.home div.welcome p.address a {
+    text-decoration: none;
+    height: 106px;
+    display: block;
+    color: #000;
+}
+
+body.home div.welcome p.address a.map-link {
+    width: 116px;
+    height: 104px;
+    display: inline-block;
+    background-image: url('../images/map.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border: 1px solid #b9b9b9;
+    float: left;
+    position: relative;
+    left: -16px;
+    top: -10px;
+}
+
+body.home div.important-area {
+    margin-top: 25px;
+}
+
+body.home div.important-area ul {
+    overflow: auto;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+div.important-area ul li {
+    padding: 10px 0 0 90px;
+    width: 200px;
+    height: 65px;
+    float: left;
+    border: 1px solid #c3c3c3;
+    margin: 0 0 0 14px;
+    background-color: #e9e9e9;
+    box-shadow: 1px 1px 6px #c3c3c3;
+    border-radius: 3px;
+}
+
+div.important-area ul li.nav-icon.video {
+    background-position: 10px -570px;
+}
+
+div.important-area ul li.nav-icon.audio {
+    background-position: 10px -74px;
+}
+
+div.important-area ul li:first-child {
+    margin-left: 0;
+}
+
+div.important-area ul li:last-child {
+    margin-right: 0;
+}
+
+div.important-area ul li a {
+    text-decoration: none;
+}
+
+div.important-area ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --------------- */
+/* Audios Page     */
+/* --------------- */
+
+body.audios .inner-content div.audio-preaching {
     margin: 10px auto;
     width: 400px;
     box-shadow: 1px 1px 20px #c3c3c3;
@@ -424,18 +541,18 @@ body.home .inner-content div.audio-preaching {
     border: 1px solid #c3c3c3;
 }
 
-body.home .inner-content div.audio-preaching p.audio-monitor {
+body.audios .inner-content div.audio-preaching p.audio-monitor {
     font-family: AmaranthItalic;
     display: block;
     text-align: center;
     margin-top: 10px;
 }
 
-body.home .inner-content div.audio-preaching h3 {
+body.audios .inner-content div.audio-preaching h3 {
     text-align: center;
 }
 
-body.home p.audio-notification {
+body.audios p.audio-notification {
     color: #000;
     width: 400px;
     margin: auto;
@@ -443,7 +560,7 @@ body.home p.audio-notification {
     padding: 10px;
 }
 
-body.home #audio-player {
+body.audios #audio-player {
     display: inline-block;
     min-height: 50px;
     min-width: 50px;
@@ -453,7 +570,7 @@ body.home #audio-player {
     margin-bottom: 10px;
 }
 
-body.home ul#preaching-list {
+body.audios ul#preaching-list {
     overflow: auto;
     border: 1px solid #c3c3c3;
     width: 96%;
@@ -464,14 +581,14 @@ body.home ul#preaching-list {
     overflow: scroll;
 }
 
-body.home ul#preaching-list li {
+body.audios ul#preaching-list li {
     display: block;
     cursor: pointer;
     width: 100%;
     margin: 0;
 }
 
-body.home ul#preaching-list li a {
+body.audios ul#preaching-list li a {
     width: 98%;
     cursor: pointer;
     text-decoration: none;
@@ -482,25 +599,25 @@ body.home ul#preaching-list li a {
     color: #000;
 }
 
-body.home ul#preaching-list li.active {
+body.audios ul#preaching-list li.active {
     background-color: #404040;
 }
 
-body.home ul#preaching-list li.active a{
+body.audios ul#preaching-list li.active a{
     color: #FFF;
 }
 
-body.home ul#preaching-list li a:hover {
+body.audios ul#preaching-list li a:hover {
     background-color: #555;
     color: #FFF;
 }
 
-body.home ul#preaching-list li a span.date {
+body.audios ul#preaching-list li a span.date {
     width: 35%;
     display: inline-block;
 }
 
-body.home ul#preaching-list li a span.title {
+body.audios ul#preaching-list li a span.title {
     width: 60%;
     padding-left: 5%;
     border-left: 1px solid #b9b9b9;

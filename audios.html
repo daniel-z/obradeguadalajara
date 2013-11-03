@@ -20,7 +20,7 @@
 
     </head>
 
-    <body class="home">
+    <body class="audios">
         <div class="content">
             <div id="page-notifications"></div>
             <header>
@@ -31,7 +31,7 @@
                     Telefono: 3825-0121
                 </p>
                 <div class="social-icons">
-                    <a class="social-icon facebook" target="_blank" href="https://www.facebook.com/IglesiaObradeGuadalajara">
+                    <a class="icon facebook" target="_blank" href="https://www.facebook.com/IglesiaObradeGuadalajara">
                         Obra de Guadalajara
                     </a>
                 </div>
@@ -53,42 +53,30 @@
                 </ul>
             </nav>
             <div class="inner-content">
-                <h2>Inicio</h2>
-                <h3>Bienvenido a nuestra pagina!</h3>
-                <div class="welcome section">
-                    <p>
-                        Sabemos que el material que encuentras aquí es de bendición para
-                        tu vida.
-                        Si deseas visitarnos y vivir esta experiencia en vivo, te esperamos
-                        en:
+                <div class="audio-preaching">
+                    <h3>Predicaciones:</h3>
+                    <p class="audio-monitor">Reproduciendo:
+                        <span class="song">-</span>
                     </p>
-                    <p class="address">
-                        <a taget="_blank" class="map-link" href="https://maps.google.com/maps?q=iglesia+obra+de+guadalajara&amp;hl=en&amp;ll=20.668565,-103.360834&amp;spn=0.022044,0.033517&amp;sll=37.0625,-95.677068&amp;sspn=38.144864,48.339844&amp;t=h&amp;hq=iglesia+obra+de+guadalajara&amp;z=15">
-                        </a>
-                        <a taget="_blank" class="link" href="https://maps.google.com/maps?q=iglesia+obra+de+guadalajara&amp;hl=en&amp;ll=20.668565,-103.360834&amp;spn=0.022044,0.033517&amp;sll=37.0625,-95.677068&amp;sspn=38.144864,48.339844&amp;t=h&amp;hq=iglesia+obra+de+guadalajara&amp;z=15">
-                            Vidrio #1522, Col. Americana, Guadalajara, Jalisco, México. </br>
-                            Telefono: 3825-0121
-                        </a>
-                    </p>
-                </div>
-                <div class="important-area section">
-                    <h4>
-                        Te invitamos a que te alimentes de la Doctrina del Sacerdocio de Jesucristo,
-                        visitando alguna de nuestras siguientes secciones:
-                    </h4>
-                    <ul>
-                        <li class="nav-icon video">
-                            <a href="videos.html">
-                                Aqui encontraras los cultos grabados en vivo del ultimo mes.
-                            </a>
-                        </li>
-                        <li class="nav-icon audio">
-                            <a href="audios.html">
-                                Aqui podras escuchar algunos cultos seleccionados.
-                            </a>
-                        </li>
+                    <audio controls id="audio-player">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Seleccione un audio:</p>
+                    <ul id="preaching-list">
+                        <li> Cargando Lista de Predicas... </li>
                     </ul>
                 </div>
+                <p class="audio-notification hidden">
+                    Tu explorador no puede reproducir audio en formato mp3.
+                    Para poder reproducir las predicas en audio por favor utiliza:
+                        <a href="https://www.google.com/intl/es/chrome/browser/?hl=es">
+                            Google Chrome
+                        </a>
+                        &oacute;
+                        <a href="http://www.apple.com/mx/safari/">
+                            Safari
+                        </a>
+                </p>
             </div>
 
             <footer>
