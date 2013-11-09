@@ -502,6 +502,34 @@ div.important-area ul li a:hover {
 }
 
 /* --------------- */
+/* Videos Page     */
+/* --------------- */
+
+body.videos div.ustream {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+body.videos div.ustream p {
+    margin: 10px 0;
+}
+
+body.videos div.ustream p a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #FE8633;
+    color: #000;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+body.videos div.ustream p a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* --------------- */
 /* Audios Page     */
 /* --------------- */
 
