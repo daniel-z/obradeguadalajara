@@ -547,6 +547,10 @@ div.jp-audio {
     margin: 0 auto;
 }
 
+div.jp-audio div.jp-type-single div.jp-interface {
+    border-bottom: 1px solid #b9b9b9;
+}
+
 span.jp-artist {
     color: #666;
 }
