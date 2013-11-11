@@ -533,92 +533,44 @@ body.videos div.ustream p a:hover {
 /* Audios Page     */
 /* --------------- */
 
-body.audios .inner-content div.audio-preaching {
-    margin: 10px auto;
-    width: 400px;
-    box-shadow: 1px 1px 20px #c3c3c3;
-    padding: 20px;
-    border: 1px solid #c3c3c3;
+body.audios {}
+
+body.audios .audio-player-wrapper {
+    margin: 20px 0;
 }
 
-body.audios .inner-content div.audio-preaching p.audio-monitor {
-    font-family: AmaranthItalic;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
+#jp_container_1 {
+    border: 1px solid #b9b9b9;
 }
 
-body.audios .inner-content div.audio-preaching h3 {
-    text-align: center;
+div.jp-audio {
+    margin: 0 auto;
 }
 
-body.audios p.audio-notification {
-    color: #000;
-    width: 400px;
-    margin: auto;
-    border: 3px solid #A65500;
-    padding: 10px;
+span.jp-artist {
+    color: #666;
 }
 
-body.audios #audio-player {
-    display: inline-block;
-    min-height: 50px;
-    min-width: 50px;
-    position: relative;
-    top: -10px;
-    width: 100%;
-    margin-bottom: 10px;
+div.jp-title ul, div.jp-playlist ul {
+    background-color: #fafafa;
 }
 
-body.audios ul#preaching-list {
-    overflow: auto;
-    border: 1px solid #c3c3c3;
-    width: 96%;
-    padding: 2%;
-    margin: 5px 0;
-    display: inline-block;
-    height: 122px; /* 5 elements visible*/
-    overflow: scroll;
-}
-
-body.audios ul#preaching-list li {
-    display: block;
-    cursor: pointer;
-    width: 100%;
-    margin: 0;
-}
-
-body.audios ul#preaching-list li a {
-    width: 98%;
-    cursor: pointer;
+.jp-playlist ul li a {
     text-decoration: none;
+    color: #999;
     display: block;
-    padding: 0 1%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: #000;
 }
 
-body.audios ul#preaching-list li.active {
-    background-color: #404040;
+.jp-playlist span.jp-artist {
+    color: #999;
 }
 
-body.audios ul#preaching-list li.active a{
-    color: #FFF;
+.jp-playlist-current, .jp-playlist ul li:hover {
+    background-color: #e9e9e9;
 }
-
-body.audios ul#preaching-list li a:hover {
-    background-color: #555;
-    color: #FFF;
+.jp-playlist-current span.jp-artist, .jp-playlist li:hover span.jp-artist {
+    color: #666;
 }
-
-body.audios ul#preaching-list li a span.date {
-    width: 35%;
-    display: inline-block;
-}
-
-body.audios ul#preaching-list li a span.title {
-    width: 60%;
-    padding-left: 5%;
-    border-left: 1px solid #b9b9b9;
+.jp-playlist .jp-playlist-current a, .jp-playlist a:hover {
+    color: #D52E00;
 }

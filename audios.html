@@ -17,6 +17,7 @@
         <link rel="stylesheet" type="text/css" href="styles/reset.css" media="all" />
         <link rel="stylesheet" type="text/css" href="styles/global.css" media="all" />
         <link rel="stylesheet" type="text/css" href="styles/responsive.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="styles/blue.monday/jplayer.blue.monday.css" media="all" />
 
     </head>
 
@@ -53,31 +54,56 @@
                 </ul>
             </nav>
             <div class="inner-content">
-                <div class="audio-preaching">
-                    <h3>Predicaciones:</h3>
-                    <p class="audio-monitor">Reproduciendo:
-                        <span class="song">-</span>
-                    </p>
-                    <audio controls id="audio-player">
-                        Your browser does not support the audio element.
-                    </audio>
-                    <p>Seleccione un audio:</p>
-                    <ul id="preaching-list">
-                        <li> Cargando Lista de Predicas... </li>
-                    </ul>
-                </div>
-                <p class="audio-notification hidden">
-                    Tu explorador no puede reproducir audio en formato mp3.
-                    Para poder reproducir las predicas en audio por favor utiliza:
-                        <a href="https://www.google.com/intl/es/chrome/browser/?hl=es">
-                            Google Chrome
-                        </a>
-                        &oacute;
-                        <a href="http://www.apple.com/mx/safari/">
-                            Safari
-                        </a>
-                </p>
-            </div>
+                <h2>Audios</h2>
+                <p>Selecciona alguna de las predicas para escuchar.</p>
+                <div class="audio-player-wrapper">
+                  <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                  <div id="jp_container_1" class="jp-audio">
+                    <div class="jp-type-single">
+                      <div class="jp-gui jp-interface">
+                        <ul class="jp-controls">
+                          <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                          <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                          <li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+                          <li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+                          <li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+                          <li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+                        </ul>
+                        <div class="jp-progress">
+                          <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                          </div>
+                        </div>
+                        <div class="jp-volume-bar">
+                          <div class="jp-volume-bar-value"></div>
+                        </div>
+                        <div class="jp-time-holder">
+                          <div class="jp-current-time"></div>
+                          <div class="jp-duration"></div>
+                          <ul class="jp-toggles">
+                            <li><a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat">repeat</a></li>
+                            <li><a href="javascript:;" class="jp-repeat-off" tabindex="1" title="repeat off">repeat off</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="jp-title">
+                        <ul>
+                          <li>Bubble</li>
+                        </ul>
+                      </div>
+                      <div class="jp-playlist">
+                        <ul>
+                          <li></li> <!-- Empty <li> so your HTML conforms with the W3C spec -->
+                        </ul>
+                      </div>
+                      <div class="jp-no-solution">
+                        <span>Update Required</span>
+                        To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                      </div>
+                    </div>
+                  </div> <!-- audio player -->
+                </div> <!-- audio player wrapper end -->
+            </div> <!-- inner-content end -->
 
             <footer>
                 <div class="info">
@@ -98,13 +124,12 @@
         </div>
         <!--     scripts     -->
         <script type="text/javascript" src="scripts/analytics.js"></script>
-        <script type="text/javascript" src="scripts/lib/modernizr.js"></script>
         <script type="text/javascript" src="scripts/lib/jquery.js"></script>
         <script type="text/javascript" src="scripts/lib/underscore.js"></script>
-        <script type="text/javascript" src="scripts/lib/moment.js"></script>
+        <script type="text/javascript" src="scripts/lib/jplayer/jquery.jplayer.min.js"></script>
+        <script type="text/javascript" src="scripts/lib/jplayer/add-on/jplayer.playlist.min.js"></script>
         <script type="text/javascript" src="scripts/mylibs/notify.js"></script>
         <script type="text/javascript" src="scripts/mylibs/logger.js"></script>
-        <script type="text/javascript" src="scripts/mylibs/audioapp.js"></script>
-        <script type="text/javascript" src="scripts/home.js"></script>
-</body>
+        <script type="text/javascript" src="scripts/audio.js"></script>
+    </body>
 </html>

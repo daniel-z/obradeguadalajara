@@ -1,0 +1,89 @@
+body.audios .inner-content div.audio-preaching {
+    margin: 10px auto;
+    width: 400px;
+    box-shadow: 1px 1px 20px #c3c3c3;
+    padding: 20px;
+    border: 1px solid #c3c3c3;
+}
+
+body.audios .inner-content div.audio-preaching p.audio-monitor {
+    font-family: AmaranthItalic;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+body.audios .inner-content div.audio-preaching h3 {
+    text-align: center;
+}
+
+body.audios p.audio-notification {
+    color: #000;
+    width: 400px;
+    margin: auto;
+    border: 3px solid #A65500;
+    padding: 10px;
+}
+
+body.audios #audio-player {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 50px;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body.audios ul#preaching-list {
+    overflow: auto;
+    border: 1px solid #c3c3c3;
+    width: 96%;
+    padding: 2%;
+    margin: 5px 0;
+    display: inline-block;
+    height: 122px; /* 5 elements visible*/
+    overflow: scroll;
+}
+
+body.audios ul#preaching-list li {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    margin: 0;
+}
+
+body.audios ul#preaching-list li a {
+    width: 98%;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    padding: 0 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000;
+}
+
+body.audios ul#preaching-list li.active {
+    background-color: #404040;
+}
+
+body.audios ul#preaching-list li.active a{
+    color: #FFF;
+}
+
+body.audios ul#preaching-list li a:hover {
+    background-color: #555;
+    color: #FFF;
+}
+
+body.audios ul#preaching-list li a span.date {
+    width: 35%;
+    display: inline-block;
+}
+
+body.audios ul#preaching-list li a span.title {
+    width: 60%;
+    padding-left: 5%;
+    border-left: 1px solid #b9b9b9;
+}
