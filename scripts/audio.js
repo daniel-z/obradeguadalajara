@@ -12,7 +12,7 @@ $(function(){
         var cssSelector = { jPlayer: "#jquery_jplayer_1", cssSelectorAncestor: "#jp_container_1" },
         playlist = audiodata,
         options = {
-            swfPath: "/scripts/jplayer",
+            swfPath: "/scripts/lib/jplayer",
             supplied: "mp3",
             autoPlay: false,
             loopOnPrevious: false,
