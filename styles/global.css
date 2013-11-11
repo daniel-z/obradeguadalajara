@@ -287,6 +287,11 @@ nav a.icon:hover {
     color: #D52E00;
 }
 
+/* Disabled nav buttons */
+nav a.icon.picture {
+    display: none;
+}
+
 nav a.icon.home, .nav-icon.home {
     background-position: 15px 4px;
 }
