@@ -431,15 +431,15 @@ body.home .inner-content > div.section {
     margin: 10px 0 30px;
 }
 
-body.home div.welcome p.address {
-    padding: 15px;
-    margin: 20px 0;
-    border: 1px solid #c3c3c3;
-    box-shadow: 1px 1px 1px #fff;
+body.home div.welcome img.vigilia_anuncio {
+  width: 670px;
+}
+
+body.home div.welcome p {
+    margin: 10px 0;
     text-shadow: 1px 1px 1px #fff;
-    overflow: auto;
-    background-color: #FFF4D2;
-    width: 280px;
+    width: auto;
+    line-height: 1.5em;
 }
 
 body.home div.welcome p.address a {
